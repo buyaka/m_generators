@@ -1,0 +1,17 @@
+Тэмдэглэл:
+      Вэб хуудасны ерөнхий үзүүлэмж(layout) үүсгэгч.
+
+
+Хэрэглэх заавар:
+    script/generate m_layout [контроллэрийн  нэр]
+                             [controller name]
+
+Жишээ:
+    удирдлагын нэр өгөлгүйгээр үүсгэх
+
+    script/generate m_layout
+    ингэж үүсгэсэн тохиолдолд application үзүүлэмж үүснэ
+        
+    script/generate m_layout home
+    ингэж үүсгэсэн тохиолдолд home үзүүлэмж үүснэ
+        

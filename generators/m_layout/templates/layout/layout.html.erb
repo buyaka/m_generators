@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title><%%= h(yield(:title) || "Untitled") %></title>
+	<%%= stylesheet_link_tag '<%= file_name %>' %>
+</head>
+<body id="main_body" >
+	<div id="header"><%%= h(yield(:header) || "HEADER") %></div>
+	<div id="topbg"></div>
+	<div id="container">
+		<%%= yield %>
+	</div>	
+	<div id="bottombg"></div>
+	<div id="footer">
+		<div id="ldiv">
+			<%%= h(yield(:footer) || "FOOTER") %>
+		</div>
+		<div id="rdiv">
+		Developed by <a href=mailto:buyantorgil@gmail.com>Buyant-Orgil.E</a>
+		</div>
+	</div>
+	
+</body>
+</html>
